@@ -1,3 +1,9 @@
+# virtual env
 steame-env/
+
+# raw data
 data/raw/
 
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
