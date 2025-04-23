@@ -10,5 +10,9 @@ data/raw/
 
 .DS_Store
 
-# Tableau file
+
+# ——— Tableau workbook files ———
+# ignore the XML workbooks and the backup/checkpoint files
 Job-Posting-Analysis.twb
+*.twb
+*.twbr
