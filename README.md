@@ -9,7 +9,7 @@ job-posting-analysis/
 │   ├── raw/               # Kaggle downloads (ignored in Git)
 │   └── cleaned/           # Output of cleaning scripts
 ├── notebooks/
-│   └── 1_data_prep.ipynb  # Exploration & validation
+│   └── data_exploring_cleaning.ipynb  # Exploration & validation
 ├── src/
 │   └── download_and_clean.py  # Download & cleaning pipeline
 ├── steame-env/            # Python virtual environment
@@ -26,8 +26,8 @@ cd job-posting-analysis
 
 Create & activate virtualenv
 
-python3 -m venv steame-env
-source steame-env/bin/activate
+python3 -m venv my-env
+source my-env/bin/activate
 
 Install dependencies
 
