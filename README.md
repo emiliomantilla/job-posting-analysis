@@ -102,7 +102,7 @@ Open the Jupyter notebook to explore and validate your cleaned data:
 
 jupyter lab
 
-notebooks/1_data_prep.ipynb contains pandas-based EDA: value counts, distributions, sample plots.
+notebooks/data_exploring_cleaning.ipynb contains pandas-based EDA: value counts, distributions, sample plots.
 
 ## 📊 Visualization in Tableau
 
