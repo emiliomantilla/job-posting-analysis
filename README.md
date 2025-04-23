@@ -1,23 +1,14 @@
-Job Posting Analysis
+# Job Posting Analysis
 
 A lean, end‑to‑end Python & Tableau project to analyze Stack Overflow Developer Survey & LinkedIn job postings data.Fetch raw data via the Kaggle API, clean and prepare with pandas, then visualize in Tableau.
 
-📁 Project Structure
+## Tableau Public dashboard link:
 
-job-posting-analysis/
-├── data/
-│   ├── raw/               # Kaggle downloads (ignored in Git)
-│   └── cleaned/           # Output of cleaning scripts
-├── notebooks/
-│   └── data_exploring_cleaning.ipynb  # Exploration & validation
-├── src/
-│   └── download_and_clean.py  # Download & cleaning pipeline
-├── steame-env/            # Python virtual environment
-├── .gitignore
-├── requirements.txt
-└── README.md
+LinkedIn Job Postings Dashboard: https://public.tableau.com/views/LinkedInJobPostings_17453769067780/LIJP?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
-🛠️ Setup
+Data Professional Profile Dashboard: https://public.tableau.com/views/Job-Posting-Analysis_V2/DPP?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+
+## 🛠️ Setup
 
 Clone the repo
 
@@ -34,7 +25,7 @@ Install dependencies
 pip install --upgrade pip
 pip install -r requirements.txt
 
-📥 Getting the Data
+## 📥 Getting the Data
 
 We rely on two public Kaggle datasets:
 
@@ -73,14 +64,14 @@ from kaggle.api.kaggle_api_extended import KaggleApi
 api = KaggleApi()
 api.authenticate()
 
-# Download Stack Overflow Survey 2024
+### Download Stack Overflow Survey 2024
 api.dataset_download_files(
   'berkayalan/stack-overflow-annual-developer-survey-2024',
   path='data/raw',
   unzip=True
 )
 
-# Download LinkedIn Job Postings 2023–2024
+### Download LinkedIn Job Postings 2023–2024
 api.dataset_download_files(
   'arshkon/linkedin-job-postings',
   path='data/raw',
@@ -96,7 +87,7 @@ If desired, rename the LinkedIn file for clarity:
 
 mv data/raw/postings.csv data/raw/linkedin_postings.csv
 
-🧹 Data Cleaning & Preparation
+## 🧹 Data Cleaning & Preparation
 
 Run the downloader & cleaner script to produce tidy CSVs:
 
@@ -105,7 +96,7 @@ python src/download_and_clean.py
 This outputs:
 - data/cleaned/so_survey_cleaned.csv- data/cleaned/linkedin_cleaned.csv
 
-🔎 Exploration & Validation
+## 🔎 Exploration & Validation
 
 Open the Jupyter notebook to explore and validate your cleaned data:
 
@@ -113,7 +104,7 @@ jupyter lab
 
 notebooks/1_data_prep.ipynb contains pandas-based EDA: value counts, distributions, sample plots.
 
-📊 Visualization in Tableau
+## 📊 Visualization in Tableau
 
 Open Tableau Desktop (or Public)
 
@@ -133,12 +124,13 @@ Comparison View: national bars comparing SO dev‑type counts vs. LinkedIn posti
 
 Publish your workbook to Tableau Public and record the shareable link.
 
-📄 README Maintenance
+
+## 📄 README Maintenance
 
 Update this file as you add new scripts, notebooks, or dependencies.
 
 Keep .gitignore in sync with any new generated folders you don’t want in Git.
 
-⚖️ License
+## ⚖️ License
 
 This project is released under the MIT License. See LICENSE for details.
