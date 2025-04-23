@@ -13,6 +13,6 @@ data/raw/
 
 # ——— Tableau workbook files ———
 # ignore the XML workbooks and the backup/checkpoint files
-Job-Posting-Analysis.twb
-*.twb
-*.twbr
+tableau/*.twb
+tableau/*.twbr
+tableau/Job-Posting-Analysis.twb
