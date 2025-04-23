@@ -7,3 +7,8 @@ data/raw/
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 **/.ipynb_checkpoints/
+
+.DS_Store
+
+# Tableau file
+Job-Posting-Analysis.twb
